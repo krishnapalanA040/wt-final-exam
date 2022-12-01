@@ -1,0 +1,23 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse an integer</title>
+</head>
+
+<body>
+    <p>Reversed integer is</p>
+    <p id="demo"></p>
+    <script>
+        var s = prompt("enter number to reverse to change");
+
+        function reversedNum(num) {
+            return (parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num))
+        }
+        document.getElementById("demo").innerHTML = reversedNum(s);
+    </script>
+</body>
+
+</html>
